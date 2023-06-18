@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvt4d1nh3fxxh"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_bg8xo"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bg8xo")
+
+[node name="VBoxBotones" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -187.0
+offset_top = -29.0
+offset_right = 194.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Iniciar Sesión" type="Button" parent="VBoxBotones"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "INICIAR SESION
+"
+
+[node name="Registrarse" type="Button" parent="VBoxBotones"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "REGISTRARSE
+"
+
+[node name="Salir" type="Button" parent="VBoxBotones"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "SALIR DEL JUEGO
+"
+
+[connection signal="pressed" from="VBoxBotones/Iniciar Sesión" to="." method="_on_iniciar_sesión_pressed"]
+[connection signal="pressed" from="VBoxBotones/Registrarse" to="." method="_on_registrarse_pressed"]
+[connection signal="pressed" from="VBoxBotones/Salir" to="." method="_on_salir_pressed"]
