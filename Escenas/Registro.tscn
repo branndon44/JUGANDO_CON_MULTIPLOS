@@ -20,12 +20,46 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -363.5
+offset_left = -193.0
 offset_top = -214.5
-offset_right = 363.5
+offset_right = 169.0
 offset_bottom = 214.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "REGISTRO"
+
+[node name="TituloNombres" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Nombres"
+
+[node name="nombres" type="LineEdit" parent="Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="TituloApellidos" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Apellidos"
+
+[node name="apellidos" type="LineEdit" parent="Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="TituloUsuario" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Usuario
+"
+
+[node name="Usuario" type="LineEdit" parent="Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="TituloContraseña" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Contraseña
+"
+
+[node name="contraseña" type="LineEdit" parent="Control/VBoxContainer"]
+layout_mode = 2
 
 [node name="Registar" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2

@@ -27,12 +27,34 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -280.0
+offset_left = -208.0
 offset_top = -200.5
-offset_right = 333.0
+offset_right = 235.0
 offset_bottom = 183.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TituloMultiplos" type="Label" parent="Control/VBoxContainer_Inicio_Sesion"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "JUGANDO CON MULTIPLOS"
+
+[node name="UsuarioInicio" type="Label" parent="Control/VBoxContainer_Inicio_Sesion"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Usuario"
+
+[node name="IngresoUsuario" type="LineEdit" parent="Control/VBoxContainer_Inicio_Sesion"]
+layout_mode = 2
+
+[node name="Contraseña" type="Label" parent="Control/VBoxContainer_Inicio_Sesion"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Contraseña
+"
+
+[node name="IngresoContraseña" type="LineEdit" parent="Control/VBoxContainer_Inicio_Sesion"]
+layout_mode = 2
 
 [node name="Ini Sesion" type="Button" parent="Control/VBoxContainer_Inicio_Sesion"]
 layout_mode = 2
